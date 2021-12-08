@@ -10,4 +10,19 @@
 // * Determine whether to print the number or print "thirty" inside the loop
 // * Use the .len() function to print the number of elements in a vector
 
-fn main() {}
+fn main() {
+    // * Use a vector to store 4 numbers
+    let exp_numbers = vec![10, 20, 30, 40];
+
+    // * Iterate through the vector using a for..in loop
+    for num in &exp_numbers {
+    // * Determine whether to print the number or print "thirty" inside the loop
+        match num {
+            30 => println!("thirty"),
+            _ => println!("{:?}", num),
+        }
+    }
+
+    // * Use the .len() function to print the number of elements in a vector
+    println!("number of elements = {:?}", exp_numbers.len());
+}
